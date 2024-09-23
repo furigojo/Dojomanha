@@ -1,0 +1,223 @@
+1. Defina uma variável idade e atribua um valor. Em seguida, crie uma variável booleana maior_de_idade que verifica se idade é maior ou igual a 18.
+const idade : number = 18;
+
+let maior_de_idade : boolean;
+
+if(idade >=18)
+{
+    maior_de_idade = true
+}
+else{
+    maior_de_idade = false
+}
+
+console.log(maior_de_idade)
+2. Escreva um código que leia um número e defina uma variável booleana numero_par que verifica se o número é par.
+const numero : number = 2
+let numero_par : boolean
+if(numero %2 == 0 ){
+    numero_par = true
+    console.log("o número é par")
+}
+
+else{
+    numero_par = false
+    console.log("O número não é par")
+}
+
+3. Defina uma variável altura e outra peso. Crie uma variável booleana pesoIdeal que seja True se altura for maior que 1.60 e peso for menor que 80.
+const peso : number = 60;
+const altura : number = 1.70;
+let pesoIdeal :   boolean;
+
+if (peso < 80 && altura > 1.60)
+{
+    pesoIdeal=true
+    console.log("Você possui o peso ideal para sua altura")
+}
+
+else{
+    pesoIdeal=false
+    console.log("Você não possui o peso ideal para sua altura.")
+}
+
+
+4. Crie uma variável temperatura e atribua um valor. Em seguida, defina uma variável booleana estaQuente que verifica se a temperatura é maior que 30.
+const temperatura : number = 30
+
+let estaQuente : boolean
+
+if (temperatura > 30) {
+    estaQuente = true
+    console.log('Está quente')
+}
+else {
+    estaQuente = false
+    console.log('Não está quente')
+}
+
+
+5. Defina duas variáveis, x e y, e atribua valores numéricos a elas. Crie uma variável booleana mesmo_valor que verifica se x e y são iguais.
+const x : number = 2;
+const y : number = 42;
+
+let mesmo_valor : boolean;
+
+if (x == y) {
+    mesmo_valor = true
+    console.log('Os valores inseridos são iguais')
+}
+else {
+    mesmo_valor = false
+    console.log('Os valores inseridos são diferentes')
+}
+
+
+6. Escreva um código que recebe uma senha. Crie uma variável booleana senha_correta que verifica se a senha inserida é igual a "1234".
+const senha1 : string = "5624"
+
+let senha_correta : boolean
+
+if ( senha1 =="1234")
+{
+    senha_correta = true 
+    console.log ("a senha está correta ")
+}
+else{
+    senha_correta = false 
+    console.log ("a senha está errada ")
+}
+
+
+7. Crie três variáveis booleanas tem_cafe, tem_pao e tem_leite. Defina uma variável cafe_da_manha_completo que seja True apenas se todas as três forem True.
+
+let tem_cafe: boolean = true
+let tem_leite: boolean = true 
+let tem_pao: boolean = true
+
+let cafe_da_manha_completo : boolean;
+if(tem_cafe == true && tem_pao == true && tem_leite == true){
+    cafe_da_manha_completo = true
+    console.log("Seu café da manhã está completo")
+}
+else{
+    cafe_da_manha_completo = false
+    console.log("Seu café da manhã está incompleto")
+}
+
+8. Defina uma variável booleana sol_brilhando. Utilize um if para imprimir "Levar óculos de sol" se sol_brilhando for True e "Não precisa de óculos de sol" se for False.
+let sol_brilhando : boolean = true
+
+if(sol_brilhando){
+    console.log("Leve óculos de Sol")
+}
+
+else{
+    console.log("Não precisa levar óculos de Sol")
+}
+
+9. Defina três variáveis booleanas: sol, chuva e neve. Escreva um código que exibe "O tempo está ensolarado", "O tempo está chuvoso", "O tempo está nevando" ou "Tempo indefinido" com base nos valores das variáveis.
+let sol: boolean = true
+let chuva: boolean = false
+let neve: boolean = false
+
+
+if( !sol && !chuva && neve){
+    console.log("O tempo está nevando")
+}
+else if (sol && !chuva && !neve){
+    console.log("O tempo está ensolarado")
+}
+else if (!sol && !neve && chuva){
+    console.log("O tempo está chuvoso")
+}
+else{
+    console.log("O tempo está indefinido")
+}
+
+10. Solicite ao usuário que insira uma senha duas vezes, senha1 e senha2. Crie uma variável booleana senhas_iguais que verifica se as duas senhas são idênticas. Mostre uma mensagem dizendo se as duas senhas coincidem.
+
+const senha1 : string = "geladeira"
+const senha2 : string = "fugao"
+
+let mesma_senha : boolean
+
+if (senha1 == senha2 )
+{
+    mesma_senha = true 
+    console.log ("as senhas estão iguais ")
+}
+else{
+    mesma_senha = false 
+    console.log ("as senhas estão diferentes ")
+}
+
+
+11. Defina duas variáveis booleanas fome e frio. Utilize if e else para imprimir as seguintes mensagens:
+
+"Você está com fome e frio" se ambas forem True.
+
+"Você está com fome, mas não está com frio" se apenas fome for True.
+
+"Você não está com fome, mas está com frio" se apenas frio for True.
+
+"Você não está com fome nem com frio" se ambas forem False.
+
+const fome : boolean = false
+const frio : boolean = false
+
+if(frio && fome){
+    console.log("Você esta com fome e frio.")
+}
+else if(fome && !frio)
+{
+    console.log("Você esta com fome, mas nao esta com frio")
+}
+else if(!fome && frio)
+{
+    console.log("voce não esta com fome, mas esta com frio")
+}
+else{
+    console.log("voce não está com fome nem frio")
+}
+
+
+
+
+
+12. Peça ao usuário que insira seu nome e idade. Crie variáveis booleanas nome_comum (que verifica se o nome é "João" ou "Maria") e idade_maior_18. Imprima "Nome comum e maior de idade", "Nome comum e menor de idade", "Nome incomum e maior de idade" ou "Nome incomum e menor de idade" de acordo com os valores.
+
+const nome : string = "João";
+const idade : number = 17;  
+
+let nome_comum : boolean;
+
+if (nome == "João" || nome == "Maria") {
+    nome_comum = true;
+} else {
+    nome_comum = false;
+}
+
+let idade_maior_18 : boolean;
+
+if (idade >= 18) {
+    idade_maior_18 = true;
+} else {
+    idade_maior_18 = false;
+}
+
+if (idade_maior_18 && nome_comum) {
+    console.log("Nome comum e maior de idade");
+} else if (!idade_maior_18 && nome_comum) {
+    console.log("Nome comum e menor de idade");
+} else if (idade_maior_18 && !nome_comum) {
+    console.log("Nome incomum e maior de idade");
+} else {
+    console.log("Nome incomum e menor de idade");
+}
+
+
+
+
+
+
