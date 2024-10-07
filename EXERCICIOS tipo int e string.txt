@@ -1,0 +1,63 @@
+
+
+2 -) function converterCaracter (valor: string) {
+    let palavra = valor.length
+    return palavra
+}
+console.log(converterCaracter("receba"))
+
+
+
+3-)
+function medianumeros (valor1:number, valor2:number, valor3:number) {
+    let media = (valor1 + valor2 + valor3) /3
+    return media
+}
+
+
+console.log(medianumeros (2 , 4 , 6))
+
+
+7-) function retorno(palavra: string, vezes: number){
+let ret:string =palavra.repeat(vezes);
+return ret
+}
+
+console.log(retorno("Bora Bill ", 3));
+
+8-) function mult( valor1:number, valor2:number){
+    let result = valor1 * valor2
+
+    return result
+}
+
+console.log(mult(10, 20));
+
+10-) function converterParaNumero(valor : string) {
+    let numero = eval(valor);
+    return numero;
+}
+
+console.log(converterParaNumero("10 + 20"));
+
+boss2-)
+function removedor (vogal : string){
+    let semVogal : string = vogal.replace(/[aeiou]/gi, '');
+    console.log(semVogal);
+}
+
+removedor('Abacaxi azul comprou nada');
+
+
+EXEMPLO
+
+function converterParaNumero(valor : string) {
+    let numero = parseFloat(valor);
+    if (isNaN(numero)) {
+        return "Valor inválido!";
+    }
+    return numero;
+}
+
+console.log(converterParaNumero("123"));
+console.log(converterParaNumero("abc")); 
